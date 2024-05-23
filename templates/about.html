@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About CineQuest</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Add this CSS to remove bullets from the unordered list */
+        #about ul {
+            list-style: none;
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CineQuest</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About CineQuest</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About CineQuest</h2>
+            <p>CineQuest is your premier destination for personalized movie recommendations. The platform is designed to assist you in uncovering cinematic gems tailored to your tastes. Whether you are a fan of thrilling action, heartwarming dramas, laugh-out-loud comedies, or any other genre, CineQuest is here to guide you.</p>
+            <h3>CineQuest Offers</h3>
+            <ul>
+                <li><strong>Tailored Recommendations:</strong> Intelligent algorithm learns from your selections to offer spot-on movie suggestions.</li>
+                <li><strong>Diverse Selection:</strong> Explore recommendations across a wide array of genres and styles, ensuring there is something for everyone.</li>
+                <li><strong>Intuitive Interface:</strong> User-friendly design makes navigating through movie options seamless and enjoyable.</li>
+                <li><strong>Community Engagement:</strong> Connect with fellow movie enthusiasts to share reviews and discover new favorites.</li>
+                <li><strong>Responsive:</strong>Seamless exposure to your favorite cinema is just a click away irrespective you are using your PC or phone.</li>
+            </ul>
+            <p>CineQuest is committed to enriching your movie-watching experience by helping you find films that resonate with your unique tastes.</p>
+            <h4> Happy viewing!</h4>
+        
+        </section>
+
+        <div id="background"></div>
+
+    </main>
+
+    <footer>
+        <p>© 2024 Jasmeet Wahla | Movie Recommender. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
